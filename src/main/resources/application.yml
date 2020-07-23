@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:  #启动jsp支持
+    init-parameters:
+      development: true
+    contextPath: /spssm
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/page/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://47.106.224.106:3306/mytest?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: HUIER520.+
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapperLocations: classpath:com/liuxi/mapper/xml/*.xml
